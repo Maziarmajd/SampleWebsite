@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import { Button } from "@mui/material";
+import { Container,Button } from "@mui/material";
 import { useEffect } from 'react';
 
 
@@ -11,10 +9,29 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="App">
-      <Button>test</Button>
+    <Container
+    maxWidth="xl"
+    sx={{
+      background: "#fff",
+    }}
+    >
+      {
+        /*
+        Appbar
+        Banner
+        Promotions
+        title
+        Products
+        footer
+        searchbox
+        appdrawer
 
-    </div>
+        */
+      }
+      <Button variant="contained">test</Button>
+
+    </Container>
+
   );
 }
 
