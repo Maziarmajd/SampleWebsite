@@ -1,5 +1,8 @@
 import { Container,Button } from "@mui/material";
 import { useEffect } from 'react';
+import { ThemeProvider } from "@mui/system";
+import theme from "./styles/theme";
+
 
 
 function App() {
@@ -9,6 +12,7 @@ useEffect(() => {
 }, []);
 
   return (
+    <ThemeProvider theme={theme}>
     <Container
     maxWidth="xl"
     sx={{
@@ -31,6 +35,7 @@ useEffect(() => {
       <Button variant="contained">test</Button>
 
     </Container>
+    </ThemeProvider>
 
   );
 }
