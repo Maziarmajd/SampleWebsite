@@ -27,8 +27,8 @@ export const Colors = {
   black: "#000",
 };
 
-const theme = createTheme ({
-    palette: {
+const theme = createTheme({
+  palette: {
     primary: {
       main: Colors.primary,
     },
@@ -36,7 +36,14 @@ const theme = createTheme ({
       main: Colors.secondary,
     },
   },
-
+  components: {
+    MuiButton: {
+      defaultProps: {
+        disableRipple: true,
+        disableElevation: true,
+      },
+    },
+  },
 });
 
 export default theme;
