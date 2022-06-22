@@ -26,6 +26,7 @@ export default function Actions({ matches }) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color: matches && Colors.secondary,
             }}
           >
             <ShoppingCartIcon />
@@ -41,6 +42,7 @@ export default function Actions({ matches }) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color: matches && Colors.secondary,
             }}
           >
             <FavoriteIcon />
@@ -56,6 +58,7 @@ export default function Actions({ matches }) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color: matches && Colors.secondary,
             }}
           >
             <PersonIcon />
