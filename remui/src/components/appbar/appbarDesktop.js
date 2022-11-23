@@ -1,4 +1,10 @@
-import { ActionIconsContainerDesktop, ActionIconsContainerMobile, AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar";
+import {
+  ActionIconsContainerDesktop,
+  ActionIconsContainerMobile,
+  AppbarContainer,
+  AppbarHeader,
+  MyList,
+} from "../../styles/appbar";
 import {
   Box,
   Divider,
@@ -12,9 +18,7 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import Actions from "./actions";
 
-
 export default function AppbarDesktop({ matches }) {
-
   return (
     <AppbarContainer>
       <AppbarHeader> My bags</AppbarHeader>
@@ -24,12 +28,12 @@ export default function AppbarDesktop({ matches }) {
         <ListItemText primary='Products' />
         <ListItemText primary='Contact Us' />
         <ListItemButton>
-            <ListItemIcon>
-                <SearchIcon />
-            </ListItemIcon>
+          <ListItemIcon>
+            <SearchIcon />
+          </ListItemIcon>
         </ListItemButton>
       </MyList>
-      <Actions matches={matches } />
+      <Actions matches={matches} />
     </AppbarContainer>
   );
 }

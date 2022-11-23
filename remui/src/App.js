@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { ThemeProvider } from "@mui/system";
 import theme from "./styles/theme";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 
 
 function App() {
@@ -20,9 +21,9 @@ useEffect(() => {
     }}
     >
       <Appbar />
-      {
+      <Banner />
+       {
         /*
-        Banner
         Promotions
         title
         Products
@@ -32,7 +33,7 @@ useEffect(() => {
 
         */
       }
-      <Button variant="contained">test</Button>
+
 
     </Container>
     </ThemeProvider>
