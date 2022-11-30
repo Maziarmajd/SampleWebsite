@@ -1,10 +1,8 @@
-import styled  from "@mui/system";
-import { Colors } from "../theme";
-import { Box } from "@mui/system";
+import styled from "@emotion/styled";
 import { Button, IconButton } from "@mui/material";
+import { Box } from "@mui/system";
 import { slideInBottom, slideInRight } from "../../animation";
-
-
+import { Colors } from "../theme";
 
 export const Product = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -14,8 +12,8 @@ export const Product = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     position: "relative",
   },
+  
 }));
-
 
 export const ProductImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
