@@ -5,6 +5,7 @@ import theme from "./styles/theme";
 import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Promotions from "./components/promotions";
+import Products from "./components/products";
 
 
 function App() {
@@ -24,10 +25,9 @@ useEffect(() => {
       <Appbar />
       <Banner />
       <Promotions />
+      <Products />
        {
         /*
-        title
-        Products
         footer
         searchbox
         appdrawer
