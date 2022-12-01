@@ -42,7 +42,25 @@ const theme = createTheme({
         disableRipple: true,
         disableElevation: true,
       },
-    },
+    },MyShopButton:{
+      styleOverrides: {
+        root : {
+          color: Colors.white
+        },
+        primary: {
+          background: Colors.primary,
+          "&:hover": {
+            background: Colors.secondary
+          }
+        },
+        secondary: {
+          background: Colors.secondary,
+                    "&:hover": {
+            background: Colors.light
+          }
+        }
+      }
+    }
   },
 });
 
