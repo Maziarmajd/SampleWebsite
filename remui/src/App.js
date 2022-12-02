@@ -6,6 +6,7 @@ import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Promotions from "./components/promotions";
 import Products from "./components/products";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -29,9 +30,9 @@ useEffect(() => {
         <Typography variant="h4">Our Products</Typography>
       </Box>
       <Products />
+      <Footer />
        {
         /*
-        footer
         searchbox
         appdrawer
 
