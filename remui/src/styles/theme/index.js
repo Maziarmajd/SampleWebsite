@@ -42,25 +42,45 @@ const theme = createTheme({
         disableRipple: true,
         disableElevation: true,
       },
-    },MyShopButton:{
+    },
+    MuiDrawer: {
       styleOverrides: {
-        root : {
-          color: Colors.white
+        paper: {
+          width: 250,
+          background: Colors.primary,
+          color: Colors.secondary,
+          borderRadius: "0px 100px 0px 0px",
+          borderRight: `1px solid ${Colors.primary}`,
+        },
+      },
+    },
+    MuiDivider:{
+      styleOverrides: {
+        root:{
+          borderColor:Colors.light,
+        }
+      }
+
+    },
+    MyShopButton: {
+      styleOverrides: {
+        root: {
+          color: Colors.white,
         },
         primary: {
           background: Colors.primary,
           "&:hover": {
-            background: Colors.secondary
-          }
+            background: Colors.secondary,
+          },
         },
         secondary: {
           background: Colors.secondary,
-                    "&:hover": {
-            background: Colors.light
-          }
-        }
-      }
-    }
+          "&:hover": {
+            background: Colors.light,
+          },
+        },
+      },
+    },
   },
 });
 
