@@ -12,9 +12,17 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import FitScreenIcon from "@mui/icons-material/FitScreen";
 import { useState } from "react";
+import useDialogModal from "../../hooks/useDialogModal";
+import ProductDetail from "../productdetail";
+
 
 export default function SingleProductDesktop({ product, matches }) {
   const [showOptions, setShowOptions] = useState(false);
+    const [
+      ProductDetailDialog,
+      showProductDetailDialog,
+      closeProductDetailDialog,
+    ] = useDialogModal(ProductDetail);
 
   const handleMouseEnter = () => {
     setShowOptions(true);
@@ -36,17 +44,18 @@ export default function SingleProductDesktop({ product, matches }) {
           </ProductAddToCart>
         )}
         <ProductActionsWrapper show={showOptions}>
-          <Stack direction="column">
+          <Stack direction='column'>
             <ProductActionButton>
               <ShareIcon color='primary' />
             </ProductActionButton>
-            <ProductActionButton>
+            <ProductActionButton onClick={() => showProductDetailDialog()}>
               <FitScreenIcon color='primary' />
             </ProductActionButton>
           </Stack>
         </ProductActionsWrapper>
       </Product>
-        <ProductMeta product={product} matches={matches} />
+      <ProductMeta product={product} matches={matches} />
+      <ProductDetailDialog product={product} />
     </>
   );
 }
